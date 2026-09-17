@@ -1,6 +1,5 @@
 name: CI workflow
 on:
-  //{insert fisrt event name here }:
   push: 
     branches:
       - "main"
@@ -10,4 +9,4 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: python:3.9
+    container: python:3.9-slim
